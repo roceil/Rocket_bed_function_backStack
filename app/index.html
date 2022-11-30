@@ -1,0 +1,36 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- 全產品類別營收比重 -->
+<section class="mt-8 px-8 mb-8">
+  <div class="flex">
+    <div id="chart" class="w-1/2"></div>
+    <div id="chart1" class="w-1/2"></div>
+  </div>
+  <button id="deleteAllOrder" class="ml-auto mr-0 block btn btn-warning">刪除所有訂單</button>
+  <table class="table-auto w-full mt-4">
+    <thead class="bg-slate-300">
+      <tr>
+        <th class="w-[10%]">訂單編號</th>
+        <th class="w-[10%]">聯絡人</th>
+        <th class="w-[17%]">聯絡地址</th>
+        <th class="w-[15%]">電子郵件</th>
+        <th class="w-[17%]">訂單品項</th>
+        <th class="w-[7%]">訂單日期</th>
+        <th class="w-[7%]">訂單狀態</th>
+        <th class="w-[7%]">操作</th>
+      </tr>
+    </thead>
+    <tbody id="tbody" class="text-center">
+      <!-- 01 -->
+<tr>
+  <td colspan="8" class="text-2xl py-9">載入中...</td>
+</tr>
+
+    </tbody>
+  </table>
+</section>
